@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "primary": {
+          50: '#f2f6fd',
+          100: '#e4ecfa',
+          200: '#c4d9f3',
+          300: '#90b9e9',
+          400: '#5595db',
+          500: '#2f78c8',
+          600: '#1f5daa',
+          700: '#1b4a89',
+          800: '#1a4072',
+          900: '#1a365d',
+          950: '#12233f',
+        },
+        "secondary": {
+          50: '#f6f7f9',
+          100: '#eceef2',
+          200: '#d6dae1',
+          300: '#b1bac8',
+          400: '#8795a9',
+          500: '#68788f',
+          600: '#536076',
+          700: '#4a5568',
+          800: '#3b4351',
+          900: '#343a46',
+          950: '#23272e',
+        },
+        "tertiary": {
+          50: '#fffbeb',
+          100: '#fff3c6',
+          200: '#ffe688',
+          300: '#ffd34a',
+          400: '#ffbe20',
+          500: '#f99c07',
+          600: '#dd7502',
+          700: '#b75106',
+          800: '#943e0c',
+          900: '#7a330d',
+          950: '#4f1c02',
+        },
+        "neutral": {
+          50: '#f7fafc',
+          100: '#e8f0f6',
+          200: '#cce0eb',
+          300: '#a0c7d9',
+          400: '#6ca9c4',
+          500: '#4a8ead',
+          600: '#387391',
+          700: '#2e5c76',
+          800: '#294f63',
+          900: '#274353',
+          950: '#1a2b37',
+        }
+      },
+      fontFamily: {
+        "headline": ["Manrope"],
+        "body": ["Inter"],
+        "label": ["Inter"]
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+    }
+  },
+  plugins: [],
+} satisfies Config;
