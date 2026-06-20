@@ -1,9 +1,11 @@
+import ProjectComponent from "../components/project/ProjectComponent";
+
 function Home() {
   return (
     <main className="min-h-screen pt-32">
       <div className="flex justify-center items-center">
         <div className="basis-1/2 flex flex-col">
-          <div className="w-4/5 self-center">
+          <div className="w-2/3 self-center">
             <h1 className="text-8xl text-primary-700 font-bold font-body">
               Guillermo Garzón
             </h1>
@@ -25,9 +27,9 @@ function Home() {
         <div className="basis-1/2 flex justify-center items-center">
           <div className="relative inline-block">
             <img
-              src="https://placehold.co/400"
+              src="https://placehold.co/550"
               alt="Foto de LGGR"
-              className="block"
+              className="block w-4/5 rounded-2xl shadow-lg border-4 border-primary-800"
             />
 
             <p className="absolute bottom-0 left-[-2rem] translate-y-1/2 p-2 bg-primary-800 text-secondary-200 rounded-2xl text-sm">
@@ -36,6 +38,58 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div>
+
+        <ProjectComponent
+        title="Escritorio"
+        description={`Este proyecto consiste en el diseño de un escritorio multifuncional que incorpora un espacio dedicado para la colocación de un piano, combinando productividad, creatividad y ergonomía en un mismo mueble.
+
+La propuesta busca crear un ambiente de trabajo y composición musical donde el usuario pueda alternar fácilmente entre actividades como estudio, trabajo digital y práctica musical. El diseño integra una superficie amplia de escritorio junto a un área reservada para el piano, permitiendo mantener una distribución ordenada y cómoda.`}
+        pdfUrl="/docs/test.pdf"
+        specifications={[
+          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" },
+          { name: "Personas para ensamblar", value: "2", icon: "/logos/group.svg" },
+          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" }
+        ]}
+        path="/models/test.glb"
+        fov={30}
+        position={[0, 0, -10]}
+        />
+
+        <ProjectComponent
+        title="Vaca"
+        description={`Este proyecto consiste en el diseño de un escritorio multifuncional que incorpora un espacio dedicado para la colocación de un piano, combinando productividad, creatividad y ergonomía en un mismo mueble.
+
+La propuesta busca crear un ambiente de trabajo y composición musical donde el usuario pueda alternar fácilmente entre actividades como estudio, trabajo digital y práctica musical. El diseño integra una superficie amplia de escritorio junto a un área reservada para el piano, permitiendo mantener una distribución ordenada y cómoda.`}
+        pdfUrl="/docs/test.pdf"
+        specifications={[
+          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" },
+          { name: "Personas para ensamblar", value: "2", icon: "/logos/group.svg" },
+          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" }
+        ]}
+        path="/models/cow.glb"
+        fov={30}
+        position={[0, 0, -10]}
+        />
+
+        <ProjectComponent
+        title="Carro"
+        description={`Este proyecto consiste en el diseño de un escritorio multifuncional que incorpora un espacio dedicado para la colocación de un piano, combinando productividad, creatividad y ergonomía en un mismo mueble.
+
+La propuesta busca crear un ambiente de trabajo y composición musical donde el usuario pueda alternar fácilmente entre actividades como estudio, trabajo digital y práctica musical. El diseño integra una superficie amplia de escritorio junto a un área reservada para el piano, permitiendo mantener una distribución ordenada y cómoda.`}
+        pdfUrl="/docs/test.pdf"
+        specifications={[
+          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" },
+          { name: "Personas para ensamblar", value: "2", icon: "/logos/group.svg" },
+          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" }
+        ]}
+        path="/models/car.glb"
+        fov={30}
+        position={[0, 0, -10]}
+        />
+      </div>
+
     </main>
   );
 }
