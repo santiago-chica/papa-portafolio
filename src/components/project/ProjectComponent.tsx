@@ -53,7 +53,7 @@ export default function ProductShowcase({
           </div>
 
           <a
-            href={pdfUrl}
+            href={import.meta.env.BASE_URL + pdfUrl}
             target="_blank"
             rel="noreferrer"
             className="mt-8 flex h-14 items-center justify-center rounded bg-slate-900 font-medium text-white transition hover:bg-slate-800"
