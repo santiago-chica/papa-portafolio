@@ -3,6 +3,7 @@ import ProjectComponent from "../components/project/ProjectComponent";
 function Home() {
   return (
     <main className="min-h-screen pt-32">
+
       <div className="flex justify-center items-center">
         <div className="basis-1/2 flex flex-col">
           <div className="w-2/3 self-center">
@@ -50,7 +51,7 @@ La propuesta busca crear un ambiente de trabajo y composición musical donde el 
         specifications={[
           { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" },
           { name: "Personas para ensamblar", value: "2", icon: "/logos/group.svg" },
-          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" }
+          { name: "Numero piezasa", value: "100", icon: "/logos/brick.svg" }
         ]}
         path="/models/test.glb"
         fov={30}
@@ -66,7 +67,7 @@ La propuesta busca crear un ambiente de trabajo y composición musical donde el 
         specifications={[
           { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" },
           { name: "Personas para ensamblar", value: "2", icon: "/logos/group.svg" },
-          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" }
+          { name: "Numero piezasa", value: "100", icon: "/logos/brick.svg" }
         ]}
         path="/models/cow.glb"
         fov={30}
@@ -82,7 +83,7 @@ La propuesta busca crear un ambiente de trabajo y composición musical donde el 
         specifications={[
           { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" },
           { name: "Personas para ensamblar", value: "2", icon: "/logos/group.svg" },
-          { name: "Numero piezas", value: "100", icon: "/logos/brick.svg" }
+          { name: "Numero piezasa", value: "100", icon: "/logos/brick.svg" }
         ]}
         path="/models/car.glb"
         fov={30}
